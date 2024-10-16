@@ -1,0 +1,55 @@
+.logo {
+    max-width: 150px;
+    /* Define um tamanho máximo para a logo */
+    height: auto;
+    /* Mantém a proporção da altura automaticamente */
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+    /* Define a cor da borda do botão */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    /* Remove sublinhado padrão */
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    /* Cor da linha */
+    transition: width 0.3s ease;
+    /* Suavidade da transição */
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    /* Quando o mouse passa, a linha expande */
+}
+
+/* styles/Header.css */
+/* styles/Header.css */
+.user-avatar {
+    width: 40px;
+    /* Ajuste o tamanho conforme necessário */
+    height: 40px;
+    /* Ajuste o tamanho conforme necessário */
+    border-radius: 50%;
+    /* Faz a imagem ser circular */
+    cursor: pointer;
+    /* Muda o cursor ao passar sobre a imagem */
+    margin-left: 10px;
+    /* Espaço à esquerda da imagem do usuário */
+}

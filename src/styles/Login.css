@@ -1,0 +1,161 @@
+/* Login.css */
+
+/* Logo no canto superior esquerdo */
+
+.form{
+    background-color: #072920;
+}
+.logo-top-left {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 80px;
+    height: auto;
+}
+
+/* Responsividade da imagem SVG */
+.logo-top-left svg {
+    fill: #fff;
+    /* Força a cor branca */
+}
+
+/* Formulário */
+.form-control {
+    background-color: #2c2f33;
+    border: none;
+    color: white;
+}
+
+.form-control::placeholder {
+    color: #7f8c8d;
+}
+
+.btn-custom {
+
+    background-color: #164b3c;
+}
+
+.btn-outline-light {
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.divider {
+    position: relative;
+}
+
+.divider span {
+    background-color: #0a0e12;
+    padding: 0 10px;
+}
+
+.divider::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #7f8c8d;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 0;
+}
+
+/* Background da coluna direita */
+
+
+/* Responsividade melhorada */
+@media (max-width: 768px) {
+
+    /* Estilo para telas menores */
+    .col-md-6 {
+        width: 100%;
+        /* As colunas vão empilhar em telas pequenas */
+        height: 50%;
+        /* Cada coluna ocupa 50% da altura */
+    }
+
+    .login-bg-container {
+        height: 100%;
+        /* A imagem também se ajusta à nova altura */
+    }
+
+    .logo-top-left {
+        width: 60px;
+        /* Reduz o tamanho da logo em dispositivos menores */
+        top: 10px;
+        left: 10px;
+    }
+}
+
+/* Remover margens e preencher toda a largura e altura disponíveis */
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    margin: 0;
+    width: 100%;
+    /* Garante que a linha ocupe toda a largura */
+    height: 100%;
+    /* Garante que a linha ocupe toda a altura */
+}
+
+.col-md-6 {
+    padding: 0;
+    /* Remove qualquer espaçamento ao redor da coluna */
+    margin: 0;
+    /* Remove margens */
+}
+
+/* O background da direita cobre 100% da área disponível */
+.login-bg-container {
+    height: 100%;
+    overflow: hidden;
+    /* Garante que não haja overflow da imagem */
+}
+
+.login-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Faz a imagem se ajustar ao tamanho da coluna */
+}
+
+/* Remover qualquer espaçamento no formulário */
+.bg-dark {
+    padding: 0;
+}
+
+.form-control,
+.btn-custom,
+.btn-outline-light {
+    border-radius: 4px;
+    /* Para suavizar as bordas */
+}
+
+/* Ajustes no espaçamento da divisão "OU" */
+.divider {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider span {
+    background-color: #0a0e12;
+    padding: 0 10px;
+    z-index: 1;
+}
+
+.divider::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #7f8c8d;
+    top: 50%;
+    left: 0;
+    z-index: 0;
+}
