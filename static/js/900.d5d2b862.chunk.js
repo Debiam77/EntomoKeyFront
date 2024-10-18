@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkfrontend=self.webpackChunkfrontend||[]).push([[900],{900:(n,e,a)=>{a.r(e),a.d(e,{default:()=>s});var r=a(579);const s=()=>(0,r.jsx)("p",{children:"Pagina n encontrada"})}}]);
+//# sourceMappingURL=900.d5d2b862.chunk.js.map
