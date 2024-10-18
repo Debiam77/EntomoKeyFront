@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/EntomoKeyFront/static/css/main.e0d8e30c.css",
-    "main.js": "/EntomoKeyFront/static/js/main.5f1a1136.js",
+    "main.js": "/EntomoKeyFront/static/js/main.7b952053.js",
     "static/css/75.83aae4b1.chunk.css": "/EntomoKeyFront/static/css/75.83aae4b1.chunk.css",
     "static/js/75.21eaf07c.chunk.js": "/EntomoKeyFront/static/js/75.21eaf07c.chunk.js",
     "static/js/900.d5d2b862.chunk.js": "/EntomoKeyFront/static/js/900.d5d2b862.chunk.js",
@@ -32,7 +32,7 @@
     "static/media/fa-v4compatibility.woff2": "/EntomoKeyFront/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
     "index.html": "/EntomoKeyFront/index.html",
     "main.e0d8e30c.css.map": "/EntomoKeyFront/static/css/main.e0d8e30c.css.map",
-    "main.5f1a1136.js.map": "/EntomoKeyFront/static/js/main.5f1a1136.js.map",
+    "main.7b952053.js.map": "/EntomoKeyFront/static/js/main.7b952053.js.map",
     "75.83aae4b1.chunk.css.map": "/EntomoKeyFront/static/css/75.83aae4b1.chunk.css.map",
     "75.21eaf07c.chunk.js.map": "/EntomoKeyFront/static/js/75.21eaf07c.chunk.js.map",
     "900.d5d2b862.chunk.js.map": "/EntomoKeyFront/static/js/900.d5d2b862.chunk.js.map",
@@ -40,6 +40,6 @@
   },
   "entrypoints": [
     "static/css/main.e0d8e30c.css",
-    "static/js/main.5f1a1136.js"
+    "static/js/main.7b952053.js"
   ]
 }
