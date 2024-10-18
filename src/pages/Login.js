@@ -30,16 +30,18 @@ const Login = () => {
 
     const handleGoogleResponse = async (response) => {
         try {
-            const { credential } = response; // credential é o id_token
+            const { credential } = response; // O id_token
 
             // Enviar o id_token para o backend
             const res = await axios.post('/api/auth/google', {
                 token: credential,
             });
 
-            // Supondo que o backend retorne um token JWT
-            const { token } = res.data;
-            localStorage.setItem('token', token);
+            // O backend retorna o token e as informações do usuário
+            const { token, user } = res.data;
+            localStorage.setItem('token', token); // Armazena o token
+            localStorage.setItem('user', JSON.stringify(user)); // Armazena o perfil do usuário
+
             // Redirecionar ou atualizar o estado da aplicação após o login
             window.location.href = '/';
         } catch (error) {
@@ -47,6 +49,7 @@ const Login = () => {
             alert(error.response && error.response.data.error ? error.response.data.error : 'Erro durante o login com Google');
         }
     };
+
 
     // Função para lidar com o envio do formulário de login tradicional
     const handleSubmit = async (e) => {
@@ -116,11 +119,11 @@ const Login = () => {
                 </div>
 
                 {/* Background cobrindo toda a coluna direita */}
-                <div className="col-md-8 d-none d-md-block login-bg-container ">
+                <div className="col-md-8 d-none d-md-block login-bg-container  ">
                     <img
                         src={LoginBackground}
                         alt="EntomoKey background"
-                        className="login-bg"
+                        className="login-bg img-fluid"
                     />
                 </div>
             </div>

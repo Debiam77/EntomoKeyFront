@@ -6,6 +6,7 @@ import { GoogleOAuthProvider } from '@react-oauth/google';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import Login from './pages/Login';
+import InsectQuiz from './pages/InsectQuiz'
 
 
 
@@ -22,6 +23,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path='/login' element={<Login />} />
+            <Route path='/insectQuiz' element={<InsectQuiz />} />
 
             <Route path="*" element={<NotFound />} />
 

@@ -1,0 +1,24 @@
+.insectQuiz {
+    background-image: url('../assets/InsectQuiz/Background.svg'); /* Altere para o caminho da sua imagem */
+    background-size: cover; /* Cobre totalmente a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    height: 100vh; /* Faz com que o container ocupe toda a altura da viewport */
+    padding: 20px; /* Adiciona um pouco de padding */
+}
+
+
+.card {
+    background-color: rgb(255, 255, 255); /* Fundo semi-transparente para os cartões */
+    border-radius: 8px; /* Arredonda os cantos dos cartões */
+    padding: 15px; /* Espaçamento interno dos cartões */
+    margin: 10px 0; /* Margem vertical entre os cartões */
+}
+
+
+.divisoria{
+    background-color: white;
+    max-width: 110rem;
+    height: 2px;
+border-radius: 15px;
+}
